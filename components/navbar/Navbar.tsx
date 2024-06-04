@@ -20,7 +20,7 @@ export const Navbar = () => {
         <div className='flex flex-.5'></div>
 
         {items.map((item) => (
-          <Activelink path={item.href} text={item.name} />
+          <Activelink key={item.name} path={item.href} text={item.name} />
         ))}
 
        
